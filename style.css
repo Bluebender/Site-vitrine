@@ -19,7 +19,6 @@ body{
     align-items: center;
     background-color: rgb(252, 252, 252);
     height: 80px;
-    width: 100%;
 }
 #boutons_navigation ul{
     display: flex;
@@ -65,7 +64,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    width: 100%;
 }
 #header2{
     height: 100px;
@@ -90,21 +88,25 @@ body{
     flex-direction: column;
 }
 #part1{
-    background-color: white;
+    width: 80%;
+    min-width: 400px;
+    max-width: 1000px;
     margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    min-width: 400px;
-    max-width: 1000px;
-    border-radius: 20px;
-    padding: 20px;
 }
 #a_propo{
     width: 70%;
     margin: 20px;
+}
+#photo_moi{
+    display: flex;
+    align-items: center;
 }
 #part1 img{
     height: 250px;
@@ -209,7 +211,6 @@ left: 100px;
     #boutons_navigation{
         display: none
     }
-
     .gallery_portraits{
         width: 600px;
     }
@@ -218,7 +219,6 @@ left: 100px;
     }
     #part1{
         width: 80%;
-        margin: auto;
     }
     .part2{
         width: 600px;
@@ -240,6 +240,7 @@ left: 100px;
     }
     #bouton_menu a:hover{
         bottom: 0;
+    }
 }
 
 @media screen and (max-width: 700px)
@@ -249,17 +250,18 @@ left: 100px;
     }
     #part1{
         flex-direction: column;
-        width: 50%;
+        align-items: center;
         margin: auto;
-        padding: auto;
-        min-width: 200px;
+        min-width: 0px;
+
     }
     #part1 img{
-        height: 150px;
-        border-radius: 100%;
+        width: 90%;
+        height: auto;
+        margin: auto;
     }
     #a_propo{
-        width: 80%;
+        width: 95%;
         margin: auto;
     }
 }
