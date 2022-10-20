@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('font/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('font/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{    
+    margin: 0;
+    background-image: linear-gradient(to bottom, white, rgb(218, 191, 41, 0.2));
+    background-repeat: no-repeat;
+}
+#navbar{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    height: 80px;
+}
+#boutons_navigation ul{
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0.5px solid rgb(218, 191, 41);
+    border-radius: 10px;
+    box-shadow: 1px 2px rgb(218, 191, 41);
+}
+#nom, #boutons_navigation{
+    margin: 30px;
+}
+#navbar h1{
+    font-family: "alex_brushregular";
+    font-size: 3em;
+}
+#navbar li{
+    font-size: 1.2em;
+}
+#navbar a:hover{
+    position: relative;
+    bottom: 5px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 400px;
+    background: fixed;
+    background-image: url("img/DSC_0104.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+#header2{
+    height: 100px;
+    background: fixed;
+    background-image: url("img/DSC_0104.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+#header h1{
+    font-size: 3em;
+    text-shadow: 2px 2px 12px black;
+}
+#header p{
+    font-size: 2em;
+    text-shadow: 2px 2px 12px black;
+}
+#section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#part1{
+    background-color: white;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+}
+#a_propo{
+    width: 500px;
+}
+#part1 img{
+    height: 250px;
+    border-radius: 100%;
+}
+#part1 h1{
+    font-size: 2em;
+}
+#part1 p, .part2 p, .part2 li{
+    font-size: 1.2em;
+}
+.part2{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+#titre_paragraphe{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+.gallery_portraits{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+#decallage_gauche{
+position: relative;
+right: 100px;
+}
+#decallage_droite{
+position: relative;
+left: 100px;
+}
+
+.gallery_portraits img{
+    width: 400px;
+    border-radius: 20px;
+}
+.gallery_portraits_texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery_portraits a{
+    text-decoration: none;
+    color: black;
+}
+
+#gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gallery img{
+    height: 200px;
+    margin: 20px;
+}
+
+
+
+
+/*Media query*/
+
+@media screen and (max-width: 1300px)
+{
+    #decallage_gauche{
+        right: 0px;
+    }
+    #decallage_droite{
+        left: 0px;
+    }
+}
+#bouton_menu{
+    display: none;
+}
+@media screen and (max-width: 1000px)
+{
+    #boutons_navigation ul{
+        display: none
+    }
+    .gallery_portraits{
+        width: 600px;
+    }
+    #titre_paragraphe{
+        width: 600px;
+    }
+    #part1{
+        width: 600px;
+    }
+    .part2{
+        width: 600px;
+    }
+    #bouton_menu{
+        display: flex;
+        margin: 30px;
+        font-size: 2em;
+    }
+    #bouton_menu a{
+        text-decoration: none;
+        color: black;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #bouton_menu a:hover{
+        bottom: 0;
+}
